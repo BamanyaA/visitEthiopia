@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Historic North</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <link rel="stylesheet" href="Addis.css">
+</head>
+<body>
+    
+    <nav>
+        <div class="navbar">
+                  <a href="#home">Home</a>
+          <!------------------------------ menu 1 ----------------------->
+          <div class="dropdown">
+               <button class="dropbtn" onclick="myFunction(this)">Destination
+                 <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content" id="myDropdown">
+                  <a href="http://127.0.0.1:5501/Addis%20Ababa.html">Addis Ababa & surroundings</a>
+                  <a href="http://127.0.0.1:5501/Historic%20North.html">Historic North</a>
+                  <a href="http://127.0.0.1:5501/cultural%20south.html">Cultural south</a>
+                  <a href="http://127.0.0.1:5501/The%20Marvel%20of%20East.html">The Marvel of East</a>
+                  <a href="#">The Afar Triangle</a>
+                  <a href="http://127.0.0.1:5501/The%20coffee%20Route.html">The coffee Route</a>
+                </div>
+        
+          </div> 
+          <!---------------- menu 2 ----------------------->
+          <div class="dropdown">
+                <button class="dropbtn" onclick="myFunction(this)">Things to do
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content" id="todo">
+                  <a href="http://127.0.0.1:5501/Cultural%20Experiences.html">cultural Experience</a>
+                  <a href="http://127.0.0.1:5501/Nature%20Experience.html">Natural Experience</a>
+                  <a href="http://127.0.0.1:5501/Out%20door.html">Outdoor and Advanture</a>
+                  <a href="http://127.0.0.1:5501/Research%20.html">Learning & Educational</a>
+                </div>
+          </div> 
+          <!-- ---------------menu 3------------------------ -->
+           <div class="dropdown">
+                <button class="dropbtn" onclick="myFunction(this)">Plan your Trip
+                 <i class="fa fa-caret-down"></i>
+                </button>
+          <div class="dropdown-content" id="plan">
+            <a href="http://127.0.0.1:5501/Get%20your%20passport.html">Get your passport </a>
+            <a href="http://127.0.0.1:5501/visa.html">Get your visa</a>
+            <a href="http://127.0.0.1:5501/Book%20your%20ticket.html">Book your flight</a>
+            <a href="http://127.0.0.1:5501/when%20to%20travel.html">When to Travel</a>
+            <a href="http://127.0.0.1:5501/Meet%20your%20Tour%20Guide.html">Meet your tour operators</a>
+            <a href="http://127.0.0.1:5501/health%20and%20safty.html">Health and safty</a>
+           </div>
+           </div> 
+          <!-- ----------------------------menu 4----------------------- -->
+           <div class="dropdown">
+               <button class="dropbtn" onclick="myFunction(this)">About Ethiopia
+                <i class="fa fa-caret-down"></i>
+                </button>
+          <div class="dropdown-content" id="Ethiopia">
+            <a href="http://127.0.0.1:5501/About%20the%20country.html">About the country</a>
+            <a href="http://127.0.0.1:5501/Faunal%20and%20Flora.html">Fauna and Flora</a>
+            <a href="http://127.0.0.1:5501/History%20of%20Ethiopia.html">History</a>
+            <a href="http://127.0.0.1:5501/LIfe%20Style.html">Lifestle</a>
+           </div>
+           </div> 
+           
+<!-- ---------------menu 7------------------------ -->
+<div class="dropdown">
+  <button class="dropbtn" onclick="myFunction(this)">Login | Sign Up
+   <i class="fa fa-caret-down"></i>
+  </button>
+<div class="dropdown-content" id="plan">
+     <a href="http://127.0.0.1:5501/login.html">Login</a>
+     <a href="http://127.0.0.1:5501/sign%20up.html">Sign Up</a>
+     
+</div>
+</div> 
+<!-- ----------------------------menu 6----------------------- -->
+<div class="dropdown">
+  <button class="dropbtn" onclick="myFunction(this)"><form action="/action_page.php">
+    <label for="languages">Language: </label>
+    <select name="languages" id="languages">
+       <option value="English">English</option>
+        <option value="Amharic">Amharic</option>
+       <option value="Arabic">Arabic</option>
+        <option value="Hindi">Hindi</option>
+  
+    </select>
+  </form>
+  </button>
+
+</div> 
+<!-- ----------------------------menu 7----------------------- -->
+          
+        </div>
+        </nav>
+        <div>
+           <img class="addis_photo" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBUVFBcVFRUXGBcYGyAYGxobGiAgHBwbHB0bGxseGhsbICwkGx0pIRgaJTYlKy4wMzMzGyQ5PjkyPSwyMzABCwsLEA4QHhISHjQqJCk7MjI0MjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMv/AABEIAMIBAwMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAEAAIDBQYBBwj/xABCEAABAgQEBQEFBgUDAgYDAAABAhEAAyExBBJBUQUiYXGBkQYTMqGxQmLB0eHwFCMzUoIVcvGTsnN0kqLCwxYkU//EABoBAAMBAQEBAAAAAAAAAAAAAAECAwQABQb/xAArEQACAgICAQQCAQMFAAAAAAAAAQIRAyESMUEEEyJRMmFxQoHhFCORofD/2gAMAwEAAhEDEQA/APHBDgY6tnLUGmsMMOgBEicpJBSWMaHBcZWr4gCQMpDaHr+MZhJgrBTyhYV4PY7xbHOnsnJGlXxKY9FEdNukH4LihynfWv4RQzJwVUUDbwRgMTkUVApLCoU9Qf8AjeNbca8EE5KXZoFTklviENGKKSGGlSfnWB8PxGUousZT0cgn96RMqelYfNTXf0hU/wBFG7WmFIzKPRvFG+dIixiXA0OoiAY0fZJ2iRGJnLoJfLqpQIHrBUnHbF1LRLJWAl3raJfdlQcX/esRZFUDoCtHZvxaDk4qZLAYgtSwPeEll+h44/sBThlj7JPYPB+GlrY0UjuC56MdO8NXiVkWoRUCnyiOVili2YDsW8tAeSUlujljin2HjELSapBPp60iOdKRMd3T1uH8ARBnzVzurQUU/RyaekSy1H7SRmP3WozUr2tCe447QavT6HDClQQy0kpoNLU1hk7CKBJyunobHXtEMlAc5SX3BJtuA+8FyF5iWJSsXpfa8N78ovRyxqS2MlS3tVrWfqDBPu6uQz9fqIgnLdTTJZP3hf1ERpDGi1JBox/CkMs19ne2kFMHNaG/ftpA84urKk1HWGZihQLugm4Zxu4GkPkLSVuRmSQdOxB9HikZvtAcU9ClvqzjrCm4dzcQLMmcwITlGh/SJEzy4BqdKUP4xXnJbI8I9EqJY1PpBeY5dzEOUlqEfh52iT3akgUJfrAeRPthWOukToWG+tImDMaQIlT3DHoYaJ4CspST4hXvodaJxMqdBCXOSCzj84gWgKBc5X8DxEPu2cG1Kw6piO/oME5nekcVM2t3iFC9CSQ0cq1GZrNBFqyb3g6R2A2RsfWFDaBxZ5JLw6lWST4h0/CLQHUKfvS8Gq4itSDloemlrNrW+kAT8SpbObaCg+WseKbqIocDDI6IZMVoITMtBapj5VAWv4ivEPQsiGFLqeugUNBZ4KRjJeUZKqbmcNlOwD1A3irkYl05Sa/X84HIUgu8Nim46Ys0ntFwnEEqckvvF0viszIElbggnqQKVOlvlGdwpctR2o1e5aC8MtTkaD6W/GNE+Mqf0Si5R0SpxJBd/wAYMlcRqDmI7U9ekVihV3jqERRxi+wJyRdysQDR0vubV0f9YITjWcMR1CmA8MYDwuFyoCibkFvMPQgKmHNY1P5fMesZ5cXZbjJUFcPnFYdTbPSnUveLL3SUJK1JC02zJNtz47UisRPKCyGAHpCnTPejms7ON2pEWm5foeNJV5DkIkvmQpSTb4j6vrEily8ozqC6mut7UihwyiqWpIfOi/4eKQWM6ChKQCWzEg6/hDShvs5T1pBgnqBOUlQ1q+2mm0cMuYoPkVewsfFYfIUpROZYzGhYfiNfWCxLUGylL21FYnKfEaKfkFlo/uAB7FJfqLfKFJmpciigPld3IDU8QdPogDKhSwKua92VFLIxRSWI/fceI7HlbToE6i0g6ShgU5nANiKB9hfSB8WcrPqQOzuIgXjCHqHivxvECQ2t39CPpFoZJtglKFUX0jFJ+FSxm/e8TYmaVpKQtJSoM56fOMOueSXeIlKe8aFDyR9zwav3gQkkqIIG928xNgkJWgLzFj6uLgxjwqLDhXEPdrZT5FXA0OhHXSKybrQkZK9mtw6tAosKRV8S4olH2nV/amqfOkVfFeKiYcst0oG91dT+UVK1wkLTsec1VI0OD4iJigkJKSbVixmTlBLglJa5/Mxj5CyCGvGkmAqljMASCCa31tCZsjVKw4a3ot5eOoHYnUveFFd/CoNWVWFEfdNHA8zQshgXZ3Ie+8RKjkKMxx14dDY68FAY4GHCGCHQyFaHiH5yzRGDHXhgMIw+IUlSVC6S/wCh6RteCYqSt1/Colim7ejVjBiCcNPKSCCUq0UPyETyR5Rq6DF07PRcRgJCyHS5sXOU2Pq3SK6fwyUVMhYSoXQVOabPrbU3illcWxJN0TAP7kpZh4EGS+KK5s0iVymoZLF6mhcv1eIR93H07/uO5Rl4/wCi4lIKQxBYWLOHNq2rb5Q2aQCaHMWoQKAdqiJcLjJc1Dy0jOAeTKkEHtmCerwTNExSgfeKKbEZUhIfRncXu8Ks8r2U4WtAKkhutH26wLNSsBABd1V+6zCp8mLVeCmPyGUXflUz0vcP845NwMwJJypNKgGjasDV+gh4eqV9oSWNsExODKVCYDQjITrcBNNWu/8AxD5033ZCEuTQd1Ej8M3oIFw6s/wKQRYjfx+MEyTKzZl50q1BNCTfY+Hi7nXYirwHYWWVgKdum/bbv18xLPJAZJL9DYRAriKWICgGoKBulBD0TEnlQsFxUkhwLORp2iDcm7aLrjVWQqxZS/OQN2FaauOv7aKRXE5iVZkF60JFf30i4x0sKDBLjSBThAlBWQLUTeu/72i2OcUtrsjki30Ar9oZig01CVDQgBJB9KwEgy5hZin0+Z/SHzMKFKLUDv8Ap9YYqXlUw2jUlGK+OjLJNvbskm8GmioSSNzQesBTpCkXEXC3oAqjb0fp+9IjmSidHhY5muxZQXgp0kw8oMGplhBdSXOgag6k6xGpClkMGB6Uh3mXYYwvXkGJiKCUynOUFLuzP51iQ8PI+J+gSKnepoAILzwStsPtSfSBJSmMXSOJAoCKuW/KBpXCKJJJUTZCQ5PcjXtB8+UqWEhgkPZIdQ3dnL94xeo9bi6jtl8eKcf0N/1Lqoef0hQ//RpiuYSyxqHNfPLCjzv9W/svwZ51HY5Cj0BTrwjChQQDkmHRGIcDBTA0PBhwMRgx0GGsVolSpoclUQvHXjrA0GycWtHwn5QR/qAPxpHdNPlFWFGOhUBwiztot0HMxlrykWq3zuIs+HccUT7udMamUTCnM2lSGU3Vz21jLAw8KgPEpKn/AJQVJro2mJxSUP8AzUqUBQjxalIr5/EJmXMlag9KEgnQgkG2npFAJ6iACXAtE0tZahNbiDjwqPewOdsNkTGUdjVterdReGKxiyXKifMDlZu/Y9YQDVo0aUl2yMpPpFmiaCQ9lAg+dYbImLCuUkLFimtvrAon0AaJEYpQDAs99H77x1Bs0WE4qVPmACxd6A9j+EEzMWgvmYdBU+IzAWpr/OElStFRCWOKd9FFkfRaTMUlAPxN0G3UwKnHoL5kK6AM58m0OC5jZSQasxAuSBfyIlw0jKDMU1La1Yfn8ojPPCEW7tncG2GSEgoBKSgn+6tKMxERTsQUq+BMwuyXJIAADv8AK4iFM5R94Qp7ip1dzlpdvoNxA3DTMWsujlBPxmhKq6008PGKGaXJyl0V46pFyOIy5iSRJyli1EsS3aviMticRMKwMlEl6uGIqziL3HIAqxU2oJAfz+/WB1olsFMDVgCLbhvx6QfeXaWh+GuwXAYZJWlWYuU0F0igdybkteLfEYZbpII1JKmZ9AAzlt4Cmz1jLkISAzghgRR2H5axErFLJLOeUsTZ3DCJSlKQyaSotsJLEtLJNWOYjrttFnwjCCYrNkUEpq9HuGB+cZrhU5RLqcKcJ5iyasCojavyj0fImVh0pQwzCp6nbp0jJnTiisPlop53FEJURSnf8DCgT+GXrMlwoz8EPxmeSx1o48dBj6QxnIUdMcgnDoTwhHBBQDsdBhsOAg2cdBjrw2OiCKOBjrw2OxwBzwgqOCHe7LP2+bt9INgo6FRKic1YgaOvBsDQavEJJJCQOgJaEgKWSw/CAgYLwWJy031g8mloVxJTJmJ0V4qPlHEzYPQsnXq/Yxw4cTBQVNiAA9dafKFWb7A4/QH72LXCcPWEiYp0JUHSD8ShSoF2/SLDh3CES6r5lipLOE9gbG1d9odjsWVrKnNLudvxtGLP63n8Yf8AJohgcVykQYSelAWWDvR6l6b23pD8SoBJH3VKLauRlv0IeIpXOCPmPU6dPoYjUfjVYfCa0GY76XJboBGLjch2NQpsw122FB60+cOTMYMLO5c3UeajWq1egiBSwylqoFKSzmqjUvlFWBPyvHMRi2UkENQilwKFyCb7RTi2BBU+bmcXQzKDipZ76w1OUkES8tgEwzC4LNMaXMBBLB8wBZ6tX7KX8wYjDMAczka1YE1arORCTajobYKcClawVEkCyBTNqNbCI1TipQQlBBLBLf3PQWq9YveGcIVMWymCRXMS1Or62iywUgyFFfu0kJpnHwsKcr1FvnCe7uux1jb2JfsxKkpC1zVJmMCWAYNU0vE8/ELMtCEUygAqILJG43Ogiw96mYlJUKqFmdQe4I3aviAcfJK0jKSEmgyjmpYuD0D00ESSbty8FoxS6Iv9KepQVv8AapXrCiSUpaQApJcffHjbSFCbKcjxmFChR7554oUKFHHCjscjoME4UXXBsIc7qB5VNZ6ghmYb07E+amUpiCwPQ7RrUS0hKUp+2hgonLm2BJ8B+m7xLNPiq+wFJLwCczqJyMVEszCjUehq7bEQFjJRSsghn5qBhUOw6B28RpUzHVlyADmKhqCEhIFLmrNu+lYD4rL98AtIVqEgCjJcqNBegAFHcneFhkd7OKAGCJeHUpmBLhx9I5Jwq1KbKaFjS1Wr5jS4DD5WBSB166xXJlUENCHJlXheErKQtiKtUa/tx6QdJ4XmJKRTMD05HDPrUtFjxSbOQjNl5egt3i49l5subLsApmLU1/V4yy9RKrNCwRujK4zh6BzKcIQG6rLE/Wgt9YoJxqaN0j2Hi/AZa5ZCSxG3m28ea8R4MpMwITrVyGAFSH6lqCLYcyktkMmPi9FMITw+bJUgsflX0ji5ZSzhgY08kRosuHTZaQ61KzaAAkdmG8XOBmlBExSWylw5B80fu3aK3h8lOYEJ5SXcvpoSDQvVukWawyAQgk0cdCRVtKCnV4wZp26XkeEfIVjMchYZCqnmoSxB60J8wHLkLmOAxbVz4zHzBeETLQlCzLdJPMFU1fKGNRUwdxGaokIEsiWKsTTK+jV3tGLlxdRRanLbK6TJWkVKHLgknUWvFdiJxW6CkZy5IZico0IqfyMX2Mme8GYAhhlIcgaVS7t21gPh8hC1pSsjKo5cx2JAZ61dj3A0eKY5eWBxM/NCnUVcrAAEixoNfhPZ7h4mwHDJiyV81woBnfctVmJEaWZwcSiQoBgcvNlIN6ZtFO3Kos22lhwzhWQZ+YpZikpYp0LJNxzA5Xo1DrFXn+OjvbYPiZGUfywMrEgj4tiw3v6EaQPg5a5xKEEaKqQ4BYml6OPSNKOGZ8zmhDPdwbH/AHBgXOr7lpsDwcy7sF5viQliU7+CVFrjffHca/ZRQGnCA+7QlJIAdJuHF3L3rbsasYLRLMvKgspS3SxZg2tr2i1wuGKQ1Lvah8aV1EET8Ol83gg7bjY0iafFFrroqJXDmZhQqL15q7dR+MTy8OgJKSxbRrmlw1D+6weEZbfCaebfOKfHrNw9WJINw7CtiQf3sksjXQSblNiPN6UrCiql4gsMs1aB/bmsddRcuba63hR3L9g5Hh0KFCj6IwihQoUccKFCMKOOCcGHWkakgDoTQHq20aSXiEHKhFMqaAF2UDmsHr1fSKbg85lJBH2goHQFwK9C7Rb4JJRMUVVBF61Y5QFPq6QX6RDM77ARyUn3ii5KspWEuwzMzE6XUb6izRPLngIyorlyqcEBspSWJ3zJ9H3iTGEIlgJy5gQ6hTTM9LFyR/lAqMOhiS4q5A0INSxd6kADVz4kmmrCW3AeHlYVMASHVdqABgGI9KXaNXwvgoMzOoEgb6+NqxB7Lyc8tCmZISMo0FPmWoTGsQCE9YyZcjcmbsEfiZz2pXKRJUCKszbnSPM8PxFciYTLIAJ1/e+kan24StRBc5dWvTaM5IwktaM6Q6sz1vShBf8AesafSwTjcvIM0nypFrwT2nmrWUs4727bQZxqXmOax11/f6xU8CQkTVOWBAUlqultN2IOsbKbw7OgfzEDoSz3Z6QZpRlSESco7MMnh6VLDHMsluagDOSQ2oA63MT4iSbFKWV0DB+lgOkW2JwZlLYJAVVjWpOoJuLegg5GClqaWtZLHMVBtzbRmIr2iWbK4NWRSX9ylUFsEuSMtMopsMoAoKigGsMVhVhCgtwFURS5fld9eX07xoSgofkcIQlnoSQxZjq5I7xXImLJKlvyGoHUOkkXyWeIxyNq0jv5BkIQkKoSEkJJLcqiwLG6ahnpD0TCti9g1HepZwR11tX1lm8LXNSlKVBJSSoE0zrPV9h5gvh3szPSCorQSbJzE6h2JBDMf+HeHTi1t7+h434BsNhiplOCFcpGYpS+gKVJcEnYUOmsEy+GrQvmJLHKULSxLh2JYggirgV6G+i4fwwMVrQy7KyqVlIoz5hU0vS1zB8kTEkAJGVtFJ+hubxOWRLofgmBIwWcOUpUlbE71ZT1Lmrgpo4to9lhuG5E/wAsqCWokMEhy5YZXS+3W0TomILhIZR0ysTp+yNoJRNB5T2Yhj6H6iM0sjemOkkCzJZSWo2pbSlXYsNI6jGI5WIZrjQ0yt9CO0cMjKq5OZwWPz7x1GEBDEPUOCKEj7Xlg+jgQIfTGVeSVWJCQGYjQDbVu0cOMzFrC76aP+XSvmJeGIzJUXQbK1S+5+b2juHkNdnB8FtRci2rse8CX8nMkVhjcKIo7G1q20/5iEyzkqGKfQvemlavXzWJETmoCCNjtp+Ec9+E2BY0G42t4iUZoF0VZ4XshTaMzeI7FhMVMBLZSNO0KHsXmvo+c2hR0xyPpjGKFChRxwoQhAwjHHBeHkKbOkOxal/A3Z40QllQ5iyspyku+ZLMQ5YaeOhip4MpRdCQXzBQOga7nT9IJlLVMLIy5kKJCSLBLNaoc0iGS2/4OJsQgKUk5uYpAcWBIDVG9PW8CS3UVIKmSkKJUz5gCHy17N1g7HoXmSQBlSM1DRqMo5qOLdIHlIKpiTlUrMSQEsHBIW1aDWmsLF/Eajc+wWNK0iWkBk8r2sTVqly4P7c7jHyS1/S8ZH2M4ctFHoOeas2BNciev72ib2z9tUYcKlymVOI3oh/7uraX7XjLLGpy0a4N447KT2pxCEgpUQ+zxneEqQBM5c2YhxftGcxeNXNUVLUVEl6wfw3GZEKGZiWah0e/rGqGLhHsk8vKQ7i81YWFB0ZbVqOzQBP4jNWXVMU/cw3G4hS1Fy8QIS5i6SrZGUnZ6Ng1TE4FClLzGY6kpUcyGDMk/wBhLuCGIyqegYhcK4ohUxDuKsX2LBt30gU4gJwiJV8pCuxUgFXaqyIp1HmJ+0a9/wAjGeWNTTTHaPU8PglqABGagAL0UQKZtM1fUdARFj+BTFFCpd01A+64dDguk1JAse8T+wXEEzpJBPPLYKFCCNCxvSniNSopXZiU3Gh6lvHrHmO8ci6gmirwPDOQOjKVNmIIbcZbgB9G8722H4fLAqHP3q/SA5PEMlCm2r6d3e/7DtCmcRSqomtR70bo5ETug8S1UAA2VLdm70gOZKTYpCRuEpNrUUIrl4yYaJmAhtWNtzZ4DxOLCiRRRYfFVIejCo9P2F2+glr7uW4AylnprvShd/nEi1Zk8gJ7aeH/AHpAWCwpNDlSKEMWI7DaLlCFAVZTDd/r22g8X5OsHCM6TmY6HLUbWuIfLlkM5tsX7s9T84cJpdyPz+Vh6+Ijn4gJrXKb/qPxG3SobVAslBejsfq2x/PzA6wOx6UH7fTSsOVNDOC7Vr+fSB50/sP1d/31icqrYUrAMVKUCdgQfBGWjdWNI6VFJJZ2LevTY09IlXNCgATWgqNj+QgZBJulyRY7OQSK1Ft4moq9AcUgjIdFEf5Qol/h0j4sz9DTo3iFFvbX2JxR86woUKPpTKKFChRxwoUKFHHE+HnqQXSWehpo/aNJwSUUhSiS7gMWAezP4YdPMZfKaUvUdakfUGNTwgrKc6mddA7tXltZJD3iOf8AEKH4jEgIMs5ApbuCGuAsl25bkDd4J4AggomroJaG5q1NEmnRRH+Jit/g0rVmF85WCLlJAIBB15ot5qPd4UgbgUsAAXre8Z51GPFeSuLcthuL9p1ZfdSTkQHdY+JR1U+hO/0jDz8OcxL3J8u7/X5wRnI/KJ5UgrKU71PaL40ooM25Mr5mDKUvT/mLDA8OzJc6bRrTwATEptUCtK/N9t6RayOCD3akoGZKaKUBRS75Qf7Q7E620Lmc0lY2HC5zSM/N4ElUqWsoBzJezFxQ17gxSYjgeUcobWpr0FY9J4MtZExC0OEKCgCLJUln8FKvWHYrAS5iVZBUCqCajYtqLjpEoZLRp9T6bhK10eXJQoBWa5L+t4CWkh29I2WP4YzlmFK/P6CKPF4ZD39IdZE9GVwoh4DxdciZnQb8qrt8mbvoaxof/wAymImZhXcHuDpTRuoA2jK/wJCnSoN8m8PEmKwSikKlkLIuEu/gEAnw8JLHGUtivklo18/2v94AQDmdy1y1q600+l4bisVMKZSgmynUQfsk0INiQQd/i60ynAsQkKBUrJucxqNWAodbx6hwvBoITnKpgUlwohFQwocgSkjLdxV70ESnihj3R0ZORRyJkxYZWUChYAMFGxszuRo9rUifhSpgmMtRl5uVJaynau9vrsY0uE4RLlAhD5DoQ3kP8BcVsHPUMsThjazDlIP2QQSk1FaDpXu+WWWF1RXYbgkiWnfwAGPW6tfXSCRMP2fQ19IqpGNzOnlcFPrS43vS9D5dhccCVpVyhLZfICnr1JDdIzTcr0MwuYou+XuHqenQ7aP6xypA1TvR2qxB1NBTb0jiZqQbnKevmj6t9XiNaCHDliHuKG7GtQXd9K9IUVsemWDRyPNGIFqPvt8ogVJUAKOR8W7aG9qP410QZTJdlJFj9a9/n5h8skGtAK2b5bav3HfqpHKRAmQQvKpLhQKkqehBplKS7KFC9RBgQyTRmBBeoZhU79THc4Y05dQdB+F70o+0OSpks9Qx7gvzBr/pA7CTv90mFAUv3gAY07H8oUUths+dIUKFH0RiFBvD8F7xTOwDv0oWPUPHMFhc5arbgaipB2o/lo0eBw0uWaNnVofhoKgPo7XOsTyZOKpdnAKeGy0rZQKgk1u6spJIYPVQYNRmeGHhwKpZNppXmIFACaMWYMW8v2i6wqSA6w5NizFFSGOhBsKBq3idGGXnTUe7AWHSwpmrcMXu3Rog8zTCV+A4blSc/wAQUQgqLsEkFItcVNmtpBE1CgQhiwUCQXFCrm5bCxNw1O8aXC4JJAZOZBJIH2kFqhnO5FCb6RJK4QSpaCrlcZFG4ZNQsWUk5b002iDytvY/BmRXgyjmlklSqEk8yWLmgqQog2sQ20WWHwilSyk1BPL6kir1YV7RpOH8CAWpCgC9QkaBQSVAv9lgljvVnobg8OlpAQlIALAqYfZHKSRYaHvCzzJ6ZSMWnZ4/xMiWUsPiDv06QZ7PTUKmDMT12uPpeIvbqQmXiTLTQJFtnrFbwWYUTErAKspdtPMa0v8AbsF/Kj1KWszFGXmySwaqsSLMl72ja4fDS5ctISAEgMALekeSzeJzJhSfdpQR3L9ekaHBe06yDLmAAgUINNAL2jMptPZpcVWi6wHEkDGmWQllS1jT4grMPor1iP2mxaZZ94gAHKU0F9reYyWLxbYqXMBsc43yqBStJ2ILj/ExF7TY0gkKJKFKSpKvuFKnIGrF360im3SJv7LDivGJS0BKVBiBrZk1/faMjj5JIJS5HX8GjPYgFKiDQgkH6ERecO4h/LANSlQSBuCk0+Soo8XHaJ+5emVpUUljBSnyuklu/wAoI4ngCRnALH66jv0isw8xQOVnejD8OsUj8kLJUXns/M97PQCnKp/jBIcahZBq4pmvu4t6hi1iWuWCTUZScxoQwFb9egSdY8y9mAU4qXU5SQT0YgjN0cA+kenrWZswgMSAFggtUqUQCNRlI217xl9U30HH0WclfKEqIZr9gGY7PVn16QJillQ0cBj3Bf6j5xHiZKywTRq0sUksWq+oPjrA07N7s1qzWLl5ZWW9RTUJ6R5yhy2yjEMOBygKGZlApAFaWIozvRoecKfjQAHGWigkMFUIy6kH10F4r8BNXnIUg5AQErZiCzEPYW1F20telOZGVnCkkkhmcEAggW19D2hpR4rZ1qiKWFhszBWla/8Aqyv9RvEiVFmYcu2Udwz8t7WrS9RVImJogElQen2rvlB6t62EQ/6mpKTmKCoHKQVVvlNHBuwtejWdODYnJIsRNQWBSyuoZn20+UNmJYOApgb3Dmmh69hWAcNiUzBmSkuOUpcHYFiO4NGdoKlz1ILLYG1ixrW7ZSwFH3NWjpRa00GMr6EhbH4G60Zrtahro41jsmZy5QCLWL0IJJu7EC3XZzBS8MCxIINNQRrrchnuT2F4gw2DWlXxHlWG15SCSHbYjeoMKoNHdAE8zUqISogfnU67woMm4PMX5agfQbiOR1DWfPcKFCj6QyB3DMV7tYJs7nx+hPrF7NdYQkAc5VzOzOXLbOz93jOIkvUOoagXHeh9Y13D8OUICXtnU5YuSBlrd70qIz56jvyFB+HlmiMiwmtQpmdNgQlgL2b8rfhU0KX7sUA0OtAKKFHYBtadIpsFhhMIWSQA5clnJNBXVnbcAxe8NXKC1GW+VqqzVNK/GK3FXufXG/tlIJmjwqMtMgSpqKUDerApoWGvnrBhbKVFALjmy7lgaG1HY0djtFdguJAkArdLB0HmZJqCcoYeKRzE8fkyswGZZeybOS4dWhoba76ZnfIukwhZQlYoAW2Omppciv8AifA8qeSrL4UXbl58qxR3zZQa69YzKvaaYpaVS0ABXIkElTl9CAK8wDbEeZZnEZiyFAJAZQUP7c3xORlP5ECGWN9sPFsxXtoozcdOUkUK2c7sAXfq8WHCeEEEC4DeSSQABqaG0HYz2bOJK5kpYEx8ykKJyrU9TmflUb7Hpra8Fwk4qBmSgjK4ysW+H7LuLk13EasmVOCUX0DHjak7OS8AzEijfLaA8dhik1BN2y6gh+2YN5p3jepwqQEpKSSSz9ALnU6DyIgxXDEZg7sKdCBoabEbRkjNp2+jTKqMRh8EVhC0qIJJSSkdCUUV8IdApus3Dk20/hXvEy5cxOYFToTehIVbMCBoxe2zk6FOASigJYirM4ZQLgjqHY3r5mxOBTMQQ4C6FC005gSoMQXfMO4fqX0LOrVmaUaPLcf7PmYFUUqaAEyzLSAhYBfKQSS6UEJFRTJ3grAez3u0soMaOW5kKbLmN80sqICh9lwa2PoK8ClahMyhExzmRm5ZgLBXLYqCbUBahoGiIyFCYTy81gbEMAQsnyTY9LkNP1LapCRjFOykwSSiUqWuUkpzEqQQaFLOpJB5QaHuL1inxfspLmuqSvKt86SA4GrApNbZkmlBG6KEg8wAUAcrFyQO7nMAagaVDvQc8OCTnSVF3U7v9rNyuSUlKq+dgAEx5aff+Qy2YzDcNXJWieRlKVZJgDFLJehblAAcXolCNSx2/CsEJcyYoHlWgM7hgDyADZhlLbGlTB6sOhSFMihukUqGcVtmDP4FIgkT0pu7JFPDBTDQg1fr1hcvqOaoRRoKngKsqpSUh7ubaH7sB4hIypIOVQyjLZgAoBtNdLZW7ijGAKWGGYLSwNnIAqT1y1rpEgxQArTKo5i1w5TXqWNuhiKTaG5JimSczTFJyksxAU9KtaooO4TUOKmDKAakX+FJZtQGAYVfxA890c8tWYfAUqDlumUXdINSz3ghJFScwIsxZzU0ud6GmtmMNxtHX9jUz0pS0wpyFv5gZhm/u0qTRVvUiB8dgwyVfEoE5fvOMvMSXdnBf/3NWxlpQHVkIehax1szG4qHrrDVJT8LhqcuwADi+30gq4vRKSM1PlFH/wDRZJ5VZkqVLKqEOpgoM5ZTUBq7AX+GWo5Qvmb4VZWBA6ux0IprY6dRJyun4kPlq9Rs41BHpTrAIVlKgCzApZ3r8SVWo7mh3jpTUho60WM1RDEWBa5tYVNyTR+gDXhsrElVASMwADv8YIIPfL831ERrnOC7szkdLHdjb07wBLmlGZIYpKF+7LWmJZSUlrdNWB2aJx7GYeoPUkel2o+t7+YUQ4eeco5EqvV+tr6W8Qoel/5APB14ZQDFJBAz3+JJYAp3HUXfpEUqU931sHsHOo0jQ4fCJIyTSQsAlClCqCMroWlnKCVly5pUXMFzOALM6wCChJLkHMSGLHVQD11/yj2XNLsjRVcGwvNdiTQlqcqmKgCeU28npF7NSZXKz5CQ5+wR21ZTMKnqGgvgvAvcoWV1WSAdaJKiW3NAPWsO4lLKjlUMoUHzCxqcpJGhCVAkVSUEG7DHPKsk6XSH4NIAk4p5gSVElgRlUxBd6KagbbpdotpOJWpTJShCSl1qNciyQ40BSQXDdQLBq5eEEpSgSRnYA0DlJCsilNZwDTWxIUXt5eHXMyOMpqlSKB/iOZKdVDLmYOCA8LJX0VhGuyKfxD3i/dSqqAfmPMp2BJIDgO1APUxa4Pg6VpyzFBQWxJlpZKFAgoSFNmFtb9NB8NwHLlmMEmYCFFya1NFM2rgu5pF3hpKpaQ4Y1SSLKUlN+5cm70iMmor49lLvvoEXhfdpMtEvImoRlflZWbQPmUMqnbU9yXwxIlywnKkBiFZQBmCSXVlAqdfWxEDe9AK1gBSSy2emZTLUQHD3T6dIrMbjspK6paygdSSWNRU1vqxhactA0i3wc8FYSpqAVJqSVG1HN36akRohhQoBySxoXsQx7GwuN4w/D5q5gzAOVOKEg1cjMHLhwaJfejxo+GcQWGlzAajVKg1qKuKPv61hZQa35HjLwXS5qSbtcF2vSlehB7GIZq2cVAT5IHUEV/SAjjyCdwzsaXYvsQ4vDcRqrMcrOClvV6ghtP2c/K9Hct0S4hR0ANHNaVa1teurxBKxqUlSDQEEsSwu17PlanSt3AP8UuWsAEkKNKulqN2eviu8Q45JJfLzAk26BwX009KUg1fYsi1/iSfjbIauk1Sofaa1C+u0TTFhYBBcs0uY4u7ZVObgsKvUDUUpMOrLYC7gnQPlIILMQwBP3RSCk501DZCwUFFnoB8SRVV+jeAaJV0RcqDkSyrKFUKT/kjYi4I6V+LR2iSVMKGDaurK9CKOl7ggJYdxWBZ6SpsrdU15gzgg6LGjE0OxYwDGIUM6SMyWckgO+huCSKh7+XCqxkGLnlIzy2ANa2dgbdU0e/LAuNmB8+U3fK45k5VcptlLi2+XtEScUFZkpABUKONAxT8v16tlg82aocENVikpKu7b6wyi+wMGxCGnTE3TkDEVBCC6BtYg+kSiZmKZjOJmVVTSlbbkrJfqYFWhl5kgOqWENsXJegNvd6a93iThX2WDJCE5d/jSLD7oSo1+1o8VfQpPjpipYK0lmIAreiSsEXZyK3HvA1YLGOlrXkJTnDgoKApiA9k8zVVah6GsV0xQE3mQTLyqJVl5aFCkhP8Acr+WD0ynZ4rllIUUIWmXl+IJTyvlqGajApDsQSmwqIKhyX7B2azD4YhPLRJFgrlbpQE9yTrSC5c8uxUCl6uaAuHykWezFiDFNw3FkJ5V8zkMgkuWdiBUFtg9IPk4o5gVApzOxoq4qCwYDR6UbvCpb2FE2Llgu4JCxuSAa2IqDelqMGJimxeHDgmhZgsEVDEELah73r1Y2n8UwPvAkCpCpZoU16ivj1vDFTZSySGLjmB5FGtSxYk9aEUIKrhHDboLiU+dYqphlUAsuOaWXAWD0LON07RDKxH8xSFUJDlszEvlJ5bVJIOxF4JXIKTzj+XUAsQQk3bUFJ00KaXBirmS1e8YEqmJAKRmDMtKgSPu8pLPpDRW9gtolK1CjWtztTSgtRo5FrkCWDJUwFcxrTpCgc4jVEyeJQM2MDBgCQGoDuBpc+sWGJ/+tB857woUasvgSJZe0NEoal/++KOV9saB2G0KFGfB0y0fyJuIf0z/AOXfzlNe/WL+Sf8A9SSr7Rlhzqb6woUaZfigf1FhglEypTl3yu+tUQxf9PsqW3TmhQozLtjT6K5F1DT3Zp/1Yx/tJOUMjKUKJsTvChRfD+Qkugvg/wDQWdRLJB1BqXB0rWNxJDyUPWutdDChQmbspHopOD/0lf71f9oix4TeaNAHA0B3aFCjNk/MVAkw8r65jXX4jrEqVEoqXtfuYUKF8DMFm/00/wC/8DBfDviV/uSPHPSFCixGQbI+Dz+Jinmf1Jv+wfRJ+tY5Cia/JhfQ1PxSxplRTyYspf8AX/w/+RhQor4DDsrpX9BZ1pXX4RrFpLvO6JLdKC20KFDzA+yonf1JX/in/tiPhMwrbOSrmVcvoN4UKHh+Ivll9jaKSBQZjTT0iU1lLJqcjv1dVYUKJf0sZ9AstIdmo6qf9P8AM+sdxH9MnV011tvChQX0GP4g8741jT3SS2j7tvEPFEjPLLVy3/yhQonLsWRSzpyn+JWmp2EKFCjiR//Z" alt="">
+           <h1 class="centered">The North Historic and The Simien Mountains</h1>
+        </div>
+ <p class="desciption">
+    An ancient land of fertile well-watered mountains that form the main source of the Blue Nile, northern Ethiopia has long
+    stood at the cultural crossroads of Africa, Arabia and the Mediterranean. These divergent influences have bequeathed the
+    region a unique cultural and historical heritage epitomised by a quartet of unique and magnificent UNESCO World
+     Heritage Sites – Aksum, Lalibela, Gondar and the Simien Mountains National Park – as well as a vast array of lesser-known
+      but equally fascinating historical sites. 
+ </p>
+ <h2 class="park">What to see?</h2>
+                <hr class="horizontal"> 
+ 
+        <div class="col-lg-12">
+                <div class="slider-content">
+                  <!----------------------------- item 1  ------------------------>
+                 
+                   
+                        <div class="box">
+                       
+                        <div class="slide-img">
+                          <img src="https://visitethiopia.travel/wp-content/uploads/2021/03/Obelisk_of_Aksum_Remains14.jpg" alt="1">
+                        
+                        </div>
+                       
+                        <div class="detail-box">
+                      
+                        
+                            <span>Aksum <br>
+                                A UNESCO World Heritage site since 1980,
+                                 Aksum is ‘Sacred’ as Jerusalem, old as Rome
+                                  and historical as Constantinople, is an 
+                                  exceptional place in … 
+                            </span>
+                      
+                        
+                      </div>
+                   </div>		
+                  
+                    
+           <!----------------------------- item 2    ------------------------>
+          
+          
+                
+                    <div class="box">
+                   
+                    <div class="slide-img">
+                      <img src="https://visitethiopia.travel/wp-content/uploads/2021/03/Lal.png" alt="1">
+                    
+                    </div>
+                   
+                    <div class="detail-box">
+                    
+                   
+                    
+                        <span>Lalibela <br>
+                            Comprising eleven churches and two chapels,
+                           Ethiopia’s labyrinthine ‘New Jerusalem’, 
+                           excavated by King Lalibela in the 12th century
+                            and still in active … 
+                        </span>
+                 
+                    
+                  </div>
+               </div>		
+             
+          
+          <!------------------------------item 3 --------------------------->
+         
+            
+                    <div class="box">
+                    <!--img-box---------->
+                    <div class="slide-img">
+                      <img src="https://visitethiopia.travel/wp-content/uploads/2021/03/B3JD1gNIUAARa1H.jpg.webp" alt="1">
+                    
+                    </div>
+                  
+                    
+                        <span>Gondar <br>
+                          
+                            Gondar (also spelled Gonder) is a royal and
+                            ancient historical city of Ethiopia. The walled
+                            city of Fasil Ghebbi in Gondar is on the UNESCO … 
+                            </span>
+                  
+                    
+                  </div>
+               </div>		
+             
+          <!-----------------------------second row----------------------------->
+         
+          <div class="slider-content">
+            <!----------------------------- item 1  ------------------------>
+           
+             
+                  <div class="box">
+                 
+                  <div class="slide-img">
+                    <img src="https://visitethiopia.travel/wp-content/uploads/2021/03/gettyimages-Miguel-A-1.jpg" alt="1">
+                  
+                  </div>
+                 
+                  <div class="detail-box">
+                
+                  
+                      <span>The Blue Nile falls <br>
+                        The 18th-century Scottish traveler James Bruce
+                         described the Blue Nile Falls as ‘a magnificent
+                         sight, that ages, added to the greatest length
+                         of human … 
+                      </span>
+                
+                  
+                </div>
+             </div>		
+            
+              
+     <!----------------------------- item 2    ------------------------>
+    
+    
+          
+              <div class="box">
+             
+              <div class="slide-img">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQA4WYMQ_mZRSWfGlIwHKHY-FpIKXg10dgQpQ&usqp=CAU" alt="1">
+              
+              </div>
+             
+              <div class="detail-box">
+              
+             
+              
+                  <span>Lake Tana <br>
+                    A mesmerizing inland sea fringed by lush
+                     tropical vegetation, the 3,156 km² Lake Tana is
+                      most easily explored from Bahir Dar, a well-
+                      equipped port city … 
+                  </span>
+           
+              
+            </div>
+         </div>		
+       
+    
+    <!------------------------------item 3 --------------------------->
+   
+      
+              <div class="box">
+              <!--img-box---------->
+              <div class="slide-img">
+                <img src="https://visitethiopia.travel/wp-content/uploads/2021/03/drink.jpg" alt="1">
+              
+              </div>
+            
+              
+                  <span>The Semien Mountains National park <br>
+                    Ethiopia’s premier trekking and walking
+                    destination, the 412km2 Simien Mountains
+                    National Park was inscribed as a Natural World
+                    Heritage Site in 1979 … 
+                      </span>
+            
+              
+            </div>
+         </div>		
+           <!-- -------------------------------------------third row ----------------------------------------->
+
+           <div class="slider-content">
+            <!----------------------------- item 1  ------------------------>
+           
+             
+                  <div class="box">
+                 
+                  <div class="slide-img">
+                    <img src="https://visitethiopia.travel/wp-content/uploads/2021/03/234534565.jpg" alt="1">
+                  
+                  </div>
+                 
+                  <div class="detail-box">
+                
+                  
+                      <span>Negah <br>
+                        The town of Negash or sometimes referred to
+                         as Al Nejash is Africa’s first Muslim settlement.
+                          During the prophet Mohammed period when
+                           the Quraysh Arab … 
+                      </span>
+                
+                  
+                </div>
+             </div>		
+            
+              
+     <!----------------------------- item 2    ------------------------>
+    
+    
+          
+              <div class="box">
+             
+              <div class="slide-img">
+                <img src="https://visitethiopia.travel/wp-content/uploads/2021/04/Gheralta-Rock-Churches.jpg" alt="1">
+              
+              </div>
+             
+              <div class="detail-box">
+              
+             
+              
+                  <span>Gheralta <br>
+                    Hidden away in the mountains like ancient
+                     treasures, the churches in Gheralata are
+                      described as ‘’ the greatest of the historical
+                      -cultural heritage of … 
+                  </span>
+           
+              
+            </div>
+         </div>		
+       
+    
+    <!------------------------------item 3 --------------------------->
+   
+      
+              <div class="box">
+              <!--img-box---------->
+              <div class="slide-img">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjTRmhcAYW32GBifA0S_QhCcjr5j4m7WQ2Fg&usqp=CAU" alt="1">
+              </div>
+            
+              
+                  <span>Taytu Hotel <br>
+                    Taytu Hotel is in Bahir Dar  in northern Ethiopia. 
+                    It’s a port on the south shore of the huge inland Lake Tana 
+                      </span>
+            
+              
+            </div>
+         </div>		
+        
+              
+            </div>
+        <script
+                  src="https://code.jquery.com/jquery-3.6.0.min.js"
+                  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+                 crossorigin="anonymous"></script>
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+              <script>
+                  $('.slider-content').slick({
+             
+            dots: false,
+            infinite: false,
+            speed: 300,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            responsive: [
+              {
+                breakpoint: 1024,
+                settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 1,
+                  infinite: false,
+                  dots: false
+                }
+              },
+              {
+                breakpoint: 600,
+                settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 1
+                }
+              },
+              {
+                breakpoint: 480,
+                settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1
+                }
+              }
+              
+            ]
+          });
+              </script>
+              
+              
+<script>
+
+
+  function myFunction(obj) {
+ 
+ 
+   var allDropDowns = document.querySelectorAll(".dropdown-content"); 
+   for(let i = 0; i < allDropDowns.length; i++){
+ 
+     obj.parentElement.querySelector(".dropdown-content").classList.add("show");
+     let myArray = Array.from(allDropDowns); // Creating an array from a node list.
+ 
+     let index = myArray.indexOf(obj.parentElement.querySelector(".dropdown-content"));
+     
+     if(i == index) continue;
+     if (allDropDowns[i].classList.contains('show')) {
+       allDropDowns[i].classList.remove('show');
+     }
+ 
+   }
+  }
+ 
+ 
+  </script> 
+          
+</body>
+</html>

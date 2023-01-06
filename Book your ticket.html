@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book your ticket </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <link rel="stylesheet" href="Addis.css">
+</head>
+<body>
+    
+    <nav>
+        <div class="navbar">
+                  <a href="#home">Home</a>
+          <!------------------------------ menu 1 ----------------------->
+          <div class="dropdown">
+               <button class="dropbtn" onclick="myFunction(this)">Destination
+                 <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content" id="myDropdown">
+                    <a href="http://127.0.0.1:5501/Addis%20Ababa.html">Addis Ababa & surroundings</a>
+                    <a href="http://127.0.0.1:5501/Historic%20North.html">Historic North</a>
+                    <a href="http://127.0.0.1:5501/cultural%20south.html">Cultural south</a>
+                    <a href="http://127.0.0.1:5501/The%20Marvel%20of%20East.html">The Marvel of East</a>
+                    <a href="#">The Afar Triangle</a>
+                    <a href="http://127.0.0.1:5501/The%20coffee%20Route.html">The coffee Route</a>
+                </div>
+        
+          </div> 
+          <!---------------- menu 2 ----------------------->
+          <div class="dropdown">
+                <button class="dropbtn" onclick="myFunction(this)">Things to do
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content" id="todo">
+                    <a href="http://127.0.0.1:5501/Cultural%20Experiences.html">cultural Experience</a>
+                    <a href="http://127.0.0.1:5501/Nature%20Experience.html">Natural Experience</a>
+                    <a href="http://127.0.0.1:5501/Out%20door.html">Outdoor and Advanture</a>
+                    <a href="http://127.0.0.1:5501/Research%20.html">Learning & Educational</a>
+                </div>
+          </div> 
+          <!-- ---------------menu 3------------------------ -->
+           <div class="dropdown">
+                <button class="dropbtn" onclick="myFunction(this)">Plan your Trip
+                 <i class="fa fa-caret-down"></i>
+                </button>
+          <div class="dropdown-content" id="plan">
+            <a href="http://127.0.0.1:5501/Get%20your%20passport.html">Get your passport </a>
+            <a href="http://127.0.0.1:5501/visa.html">Get your visa</a>
+            <a href="http://127.0.0.1:5501/Book%20your%20ticket.html">Book your flight</a>
+            <a href="http://127.0.0.1:5501/when%20to%20travel.html">When to Travel</a>
+            <a href="http://127.0.0.1:5501/Meet%20your%20Tour%20Guide.html">Meet your tour operators</a>
+            <a href="http://127.0.0.1:5501/health%20and%20safty.html">Health and safty</a>
+           </div>
+           </div> 
+          <!-- ----------------------------menu 4----------------------- -->
+           <div class="dropdown">
+               <button class="dropbtn" onclick="myFunction(this)">About Ethiopia
+                <i class="fa fa-caret-down"></i>
+                </button>
+          <div class="dropdown-content" id="Ethiopia">
+            <a href="http://127.0.0.1:5501/About%20the%20country.html">About the country</a>
+            <a href="http://127.0.0.1:5501/Faunal%20and%20Flora.html">Fauna and Flora</a>
+            <a href="http://127.0.0.1:5501/History%20of%20Ethiopia.html">History</a>
+            <a href="http://127.0.0.1:5501/LIfe%20Style.html">Lifestle</a>
+           </div>
+           </div> 
+           
+<!-- ---------------menu 7------------------------ -->
+<div class="dropdown">
+    <button class="dropbtn" onclick="myFunction(this)">Login | Sign Up
+     <i class="fa fa-caret-down"></i>
+    </button>
+<div class="dropdown-content" id="plan">
+       <a href="http://127.0.0.1:5501/login.html">Login</a>
+       <a href="http://127.0.0.1:5501/sign%20up.html">Sign Up</a>
+       
+</div>
+</div> 
+<!-- ----------------------------menu 6----------------------- -->
+<div class="dropdown">
+    <button class="dropbtn" onclick="myFunction(this)"><form action="/action_page.php">
+      <label for="languages">Language: </label>
+      <select name="languages" id="languages">
+         <option value="English">English</option>
+          <option value="Amharic">Amharic</option>
+         <option value="Arabic">Arabic</option>
+          <option value="Hindi">Hindi</option>
+    
+      </select>
+    </form>
+    </button>
+
+</div> 
+<!-- ----------------------------menu 7----------------------- -->
+          
+        </div>
+        </nav>
+        <div>
+            <img class="addis_photo" src="https://visitethiopia.travel/wp-content/uploads/2021/04/Ethiopian-Airlines-Book-your-flight.png" alt="">
+           <h1 class="centered"> Book your ticket </h1>
+        </div>
+ <p class="desciption">
+    Book your trip to Ethiopia with one of the renowned and successful airlines; Ethiopian who has more than 125 <br>
+    destinations across the globe Book your flight here: 
+    <a href="https://www.ethiopianairlines.com/aa  ">https://www.ethiopianairlines.com/aa </a>
+</p> 
+          
+
+<script>
+
+
+    function myFunction(obj) {
+   
+   
+     var allDropDowns = document.querySelectorAll(".dropdown-content"); 
+     for(let i = 0; i < allDropDowns.length; i++){
+   
+       obj.parentElement.querySelector(".dropdown-content").classList.add("show");
+       let myArray = Array.from(allDropDowns); // Creating an array from a node list.
+   
+       let index = myArray.indexOf(obj.parentElement.querySelector(".dropdown-content"));
+       
+       if(i == index) continue;
+       if (allDropDowns[i].classList.contains('show')) {
+         allDropDowns[i].classList.remove('show');
+       }
+   
+     }
+    }
+   
+   
+    </script> 
+
+</body>
+</html>

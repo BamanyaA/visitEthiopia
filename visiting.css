@@ -1,0 +1,187 @@
+
+body {
+  margin: 0%;
+}
+.navbar {
+  overflow: hidden;
+ background-color: #567;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 70px;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.navbar .logo {
+  border-radius: 100%;
+ 
+
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  cursor: pointer;
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+  background-color: rgba(112, 130, 124, 0.8);
+  padding-bottom: -25px;
+}
+.dropdown {
+    padding-left: 50px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+
+
+.show {
+  display: block;
+}
+
+/* below this for main section */
+
+.slider-content{
+  width: 100%;
+}
+
+.slide-img{
+width: 100%;
+height: 200px;
+position: relative;
+}
+
+.slide-img img{
+width: 100%;
+height: 100%;
+object-fit: cover;
+box-sizing: border-box;
+}
+.detail-box{
+width: 100%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 10px 20px;
+box-sizing: border-box;
+font-family: calibri;
+}
+
+
+@keyframes fade{
+0%{
+  opacity: 0;
+}
+100%{
+  opacity: 1;
+}
+}
+#slick{
+width:100%;
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.col-lg-12{
+/* background-color: goldenrod; */
+width: 100%;
+height: 100px;
+margin: 0px;
+display: block;
+height: 100vh;
+}
+
+
+
+.slide-img {
+  width: 100%;
+  height: 100vh;
+}
+.arrow_prev {
+position: absolute;
+top: 50%;
+left: 2%;
+visibility: visible;
+}
+.arrow_prev span {
+font-size: 25px;
+color: red;
+border: 1px solid red;
+display: block;
+width: 50px;
+height: 50px;
+text-align: center;
+line-height: 50px;
+cursor: pointer;
+
+}
+
+.arrow_next {
+position: absolute;
+top: 50%;
+right: 2%;
+visibility: visible;
+}
+.arrow_next span {
+ font-size: 25px;
+ color: red;
+ border: 1px solid red;
+ display: block;
+ width: 50px;
+ height: 50px;
+ text-align: center;
+ line-height: 50px;
+ cursor: pointer;
+}
+
+.desciption {
+  text-align: justify;
+  font-family: "Aource Sans Pro" sans-serif;
+  color: #000000B3;
+  font-size: 18px;
+  font-weight: 400px;
+  letter-spacing: 0.02px;
+  padding: 0px 32px 0px 32px;
+  width: 66%;
+  margin-left: 16%;
+  margin-bottom: 1.5em;
+}

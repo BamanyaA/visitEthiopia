@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+<script src="https://kit.fontawesome.com/a1aef83858.js" crossorigin="anonymous"></script>
+<title>History of Ethiopia  </title>
+<link rel="stylesheet" href="visiting.css">
+</head>
+<body>
+<nav>
+<div class="navbar">
+          <a href="#home">Home</a>
+  <!------------------------------ menu 1 ----------------------->
+  <div class="dropdown">
+       <button class="dropbtn" onclick="myFunction(this)">History of Ethiopia
+         <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content" id="myDropdown">
+                <a href="#">Abyssinia</a>
+                <a href="#">Lalibela </a>
+               
+        </div>
+
+  </div> 
+  <!---------------- menu 2 ----------------------->
+  <div class="dropdown">
+        <button class="dropbtn" onclick="myFunction(this)"> Adwa 
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content" id="todo">
+                <a href="#">Battle </a>
+                <a href="#">Wuchale wul </a>
+                
+        </div>
+  </div> 
+  <!-- ---------------menu 3------------------------ -->
+  
+
+<!-- ----------------------------menu 6----------------------- -->
+<div class="dropdown">
+    <button class="dropbtn" onclick="myFunction(this)">About Ethiopia
+     <i class="fa fa-caret-down"></i>
+     </button>
+<div class="dropdown-content" id="Ethiopia">
+      <a href="#">About the country</a>
+      <a href="#">Fauna and Flora</a>
+      <a href="#">History</a>
+      <a href="#">Lifestle</a>
+</div>
+</div> 
+
+<!-- ---------------menu 7------------------------ -->
+<div class="dropdown">
+    <button class="dropbtn" onclick="myFunction(this)">Login | Sign Up
+     <i class="fa fa-caret-down"></i>
+    </button>
+<div class="dropdown-content" id="plan">
+       <a href="http://127.0.0.1:5501/login.html">Login</a>
+       <a href="#">Sign Up</a>
+       
+</div>
+</div> 
+
+<!-- ----------------------------menu 7----------------------- -->
+<div class="dropdown">
+  <button class="dropbtn" onclick="myFunction(this)"><form action="/action_page.php">
+    <label for="languages">Language: </label>
+    <select name="languages" id="languages">
+       <option value="English">English</option>
+        <option value="Amharic">Amharic</option>
+       <option value="Arabic">Arabic</option>
+        <option value="Hindi">Hindi</option>
+        <option value="Hindi">Nepali</option>
+    </select>
+  </form>
+  </button>
+
+ </div> 
+
+  
+</div>
+</nav>
+<section id="slick">
+  <div class="col-lg-12">
+      <div class="slider-content">
+        <!-- --------------------------- item 1  ---------------------- -->
+        <li class="item-a">
+          
+              <div class="slide-img">
+                  <img src="https://i.ytimg.com/vi/Bbk54q0Jks8/maxresdefault.jpg" alt="image not found">
+                </div>	
+          </li>
+          
+ <!----------------------------- item 2    ------------------------>
+
+<li class="item-b">
+      <div class="slide-img">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS09Zr4Ryq46BL6Z6UP3JjCEl3GtEQjJg8Gvg&usqp=CAU" alt="image not found">
+      </div>	
+  </li>
+
+<!------------------------------item 3 --------------------------->
+<li class="item-c">
+  <div class="slide-img">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxvE1CrUuLZT4N2shA9cN3UJ5FpggD0_IpdA&usqp=CAU" alt="">
+    
+  </div>	
+</li>
+<!-----------------------------item 4----------------------------->
+<li class="item-c">
+  <div class="slide-img">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTM4ZpZ60kAlkP0J2d9fwJb1EmBVLECcw0Brg&usqp=CAU" alt="">
+    
+  </div>	
+</li>
+   </div>
+      </div>
+   
+    </section>
+    <p class="desciption">
+           Ethiopia, officially the Federal Democratic Republic of Ethiopia, is a landlocked country in 
+           the Horn of Africa. It shares borders with Eritrea and Djibouti to the north, Somaliland[a] to 
+           the northeast, Somalia to the east, Kenya to the south, South Sudan to the west, and Sudan to 
+           the northwest. Ethiopia has a total area of 1,100,000 square kilometres (420,000 sq mi). 
+           It is home to 117 million inhabitants[10] and is the 12th-most populous country in the world and 
+           the 2nd-most populous in Africa after Nigeria.[16][17][18] The national capital and largest city, 
+           Addis Ababa, lies several kilometres west of the East African Rift that splits the country into the 
+           African and Somali tectonic plates.[19] 
+        
+      </p>
+      
+    <!-- this for previous and next arrow and for carousel -->
+    <div class="arrow_prev">
+      <span><i class="fa-solid fa-angles-left"></i></span>
+     </div>
+     <div class="arrow_next">
+       <span><i class="fa-solid fa-angles-right"></i></span>
+      </div>
+  <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script>
+      $('.slider-content').slick({
+ prevArrow: '.arrow_prev',  
+ nextArrow: '.arrow_next',
+dots: false,
+infinite: true,
+autoplay: true,
+speed: 100,
+slidesToShow: 1,
+slidesToScroll: 1,
+responsive: [
+  {
+    breakpoint: 1024,
+    settings: {
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      infinite: true,
+      autoplay: true,
+      dots: false
+    }
+  },
+  {
+    breakpoint: 600,
+    settings: {
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplay: true,
+    }
+  },
+  {
+    breakpoint: 480,
+    settings: {
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplay: true,
+    }
+  }
+  
+]
+});
+  </script>
+  
+     <!-- this for previous and next arrow and for carousel -->
+
+<script>
+
+
+ function myFunction(obj) {
+
+
+  var allDropDowns = document.querySelectorAll(".dropdown-content"); 
+  for(let i = 0; i < allDropDowns.length; i++){
+
+    obj.parentElement.querySelector(".dropdown-content").classList.add("show");
+    let myArray = Array.from(allDropDowns); // Creating an array from a node list.
+
+    let index = myArray.indexOf(obj.parentElement.querySelector(".dropdown-content"));
+    
+    if(i == index) continue;
+    if (allDropDowns[i].classList.contains('show')) {
+      allDropDowns[i].classList.remove('show');
+    }
+
+  }
+ }
+
+
+ </script> 
+</body>
+</html>
